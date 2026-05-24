@@ -39,3 +39,5 @@ pipeline:
                   spec:
                     shell: Sh
                     command: docker build -t sri:latest .
+  delegateSelectors:
+    - docker-delegate
