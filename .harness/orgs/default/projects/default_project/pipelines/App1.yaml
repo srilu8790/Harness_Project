@@ -37,7 +37,9 @@ pipeline:
                   name: Run_1
                   identifier: Run_1
                   spec:
-                    shell: Sh
-                    command: docker build -t sri:latest .
+                    shell: Bash
+                    command: |-
+                      ls 
+                      docker build -t sri:latest .
   delegateSelectors:
     - docker-delegate
